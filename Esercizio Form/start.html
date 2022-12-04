@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body> 
+    <form>
+    <label for="email">Put your Email here :</label>
+    <input type="email" name="email" placeholder="Exapmle@example.com"><br>
+    <label for="password">Put your Password here :</label>
+    <input type="password" name="password"><br>
+    <label for="fullname">Put your First and Second name :</label>
+    <input type="text" name="fullname" placeholder="Lucas Mayers"><br>
+    <label for="date_birth"> your date of birth :</label>
+    <input type="date" name="date_birth"><br>
+    <label for="phone_number">Put your phone number :</label>
+    <input type="number" name="phone_number" placeholder="0123456789"><br><br>
+    <hr>
+    <label for="choose_plan">Choose a plan :
+    <select name="choose_plan" id="choose_plan">
+    <option value="free_plan">Free plan |Gratis</option>
+    <option value="basic_plan">Basic plan |50$</option>
+    <option value="medium_plan">Medium plan |80$</option>
+    </select><br><br>
+    <input type="radio" name="pro_plan" value="pro_plan_on">Pro plan |<b>140$</b> :
+    <br><br><b>with this plan you can choose your service</b><br>
+    <input type="checkbox" name="edit_video" value="edit_on">
+    <label for="edit_video">Edit video with cut</label>
+    <br>
+    <input type="checkbox" name="color_correction" value="color_correction_on">
+    <label for="color_correction">Do color correction</label>
+    <br>
+    <input type="checkbox" name="music_vid" value="music_vid_on">
+    <label for="music_vid">Add a beautiful music</label>
+    <br>
+    <input type="checkbox" name="image_add" value="image_add_on">
+    <label for="image_add">Add 10 image</label>
+    <br>
+    <hr>
+    <label for="credit_card_number">Insert your credit card number :</label>
+    <input type="number" name="credit_card_number" placeholder="xxxx-xxxx-xxxx-xxxx">    
+    <label for="cvc">Insert your CVC:</label>
+    <input type="number" name="cvc" placeholder="XXX">
+    <label for="exp_date">Expiration Date :</label>
+    <input type="text" name="exp_date" value="01/01/2023" readonly>
+    <label for="billing_address">Billing address :</label>
+    <input type="text" name="billing_address" placeholder="Bonduary Street 132">
+    <br><hr><button>submit</button>
+  </form>
+  </body>
+</html>
